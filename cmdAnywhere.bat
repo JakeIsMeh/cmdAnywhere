@@ -1,13 +1,13 @@
 @echo off
 color 0A
-title cmdAnywhere 1.0
-echo cmdAnywhere 1.0
+title cmdAnywhere 1.1
+echo cmdAnywhere 1.1
 echo.
 echo Licensed under CC Attribution 4.0 Intl @ jakeismeh.github.io
 echo.
 :start
 set "var="
-set /p var="> "
+set /p var="%cd% > "
 if "%var%"=="cmd" goto start
 if "%var%"=="" goto nocmd
 %var%
